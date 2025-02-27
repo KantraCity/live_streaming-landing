@@ -1,0 +1,9 @@
+@mixin d-flex($jc: center, $ai: center, $fw: nowrap, $fd: row, $cg: 0, $rg: 0){
+  display: flex;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-wrap: $fw;
+  flex-direction: $fd;
+  column-gap: $cg;
+  row-gap: $rg;
+}
