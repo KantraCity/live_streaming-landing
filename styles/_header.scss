@@ -27,7 +27,6 @@
         font-size: 25px;
         font-weight: 500;
         color: v.$color-white;
-        line-height: 120%;
 
         span {
           font-weight: 700;
@@ -48,7 +47,6 @@
           &-link {
             font-weight: 400;
             font-size: 22px;
-            line-height: 136%;
             color: v.$color-white;
             @extend %hover-black;
           }
@@ -76,7 +74,6 @@
       &__link {
         font-weight: 700;
         font-size: 16px;
-        line-height: 187%;
         color: v.$color-white;
         @extend %hover-black;
       }

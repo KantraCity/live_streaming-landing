@@ -7,3 +7,17 @@
   column-gap: $cg;
   row-gap: $rg;
 }
+
+@mixin font($s:16px, $w:400, $color:#fff, $st:normal) {
+  font: {
+    size: $s;
+    weight: $w;
+    style: $st;
+  }
+  color: $color;
+}
+
+@mixin position($top-or-bottom, $left-or-right, $v1, $v2) {
+  #{$top-or-bottom}: $v1;
+  #{$left-or-right}: $v2;
+}

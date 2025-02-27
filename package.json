@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "source": "index.html",
   "scripts": {
-    "sass:watch": "sass --style=compressed --watch styles:dist"
+    "sass:watch": "sass --style=expanded --watch styles:dist"
   },
   "keywords": [],
   "author": "",
