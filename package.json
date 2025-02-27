@@ -1,12 +1,16 @@
 {
   "name": "live_streaming_landing",
   "version": "1.0.0",
-  "main": "index.js",
+  "source": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass:watch": "sass --style=compressed --watch styles:dist"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.13.3",
+    "sass": "^1.85.1"
+  }
 }
