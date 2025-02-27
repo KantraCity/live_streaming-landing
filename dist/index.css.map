@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":["../styles/index.scss"],"names":[],"mappings":"AAAA,KACE","file":"index.css"}
+{"version":3,"sourceRoot":"","sources":["../styles/_basic.scss","../styles/_variables.scss","../styles/index.scss"],"names":[],"mappings":"AAEA,EACE,sBAGF,KACE,iBCPW,QDQX,8BACA,SEPF,KACE,iBDHW","file":"index.css"}

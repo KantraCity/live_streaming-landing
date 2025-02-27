@@ -1,3 +1,5 @@
+@use 'importer' as i;
+
 body {
-  background-color: #fff;
+  background-color: i.$color-blue;
 }

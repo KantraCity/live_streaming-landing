@@ -1,0 +1,11 @@
+@use 'variables' as v;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: v.$color-blue;
+  font-family: Roboto, sans-serif;
+  margin: 0;
+}
