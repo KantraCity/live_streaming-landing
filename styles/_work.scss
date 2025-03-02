@@ -1,0 +1,73 @@
+@use 'variables' as v;
+@use 'sass:color';
+@use 'mixins' as m;
+
+.work {
+  margin: 0 auto;
+  max-width: 930px;
+  height: 580px;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-weight: 400;
+    font-size: 60px;
+    color: v.$color-white;
+    margin: 0 0 81px 0;
+  }
+
+  @media (max-width: v.$media_md) {
+    &__title {
+      display: none;
+    }
+  }
+
+  &__cards {
+    max-width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 180px);
+    grid-template-rows: repeat(2, 195px);
+    column-gap: 200px;
+    row-gap: 69px;
+    grid-template-areas:
+    "analysis design development"
+    "maintenance testing integration";
+
+    @media (max-width: v.$media_xl) {
+      column-gap: 150px;
+      row-gap: 50px;
+    }
+
+    @media (max-width: v.$media_lg) {
+      column-gap: 75px;
+      row-gap: 40px;
+    }
+
+    @media (max-width: v.$media_md) {
+      grid-template-columns: repeat(2, 180px);
+      grid-template-rows: repeat(3, 195px);
+      row-gap: 40px;
+      grid-template-areas:
+    "development analysis"
+    "design maintenance"
+    "integration testing";
+    }
+
+    @media (max-width: v.$media_sm) {
+      row-gap: 35px;
+      column-gap: 35px;
+    }
+
+    @media (max-width: v.$media_xsm) {
+      grid-template-columns: repeat(2, 141px);
+      grid-template-rows: repeat(3, 153px);
+    }
+  }
+}

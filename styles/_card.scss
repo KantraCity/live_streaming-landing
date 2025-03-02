@@ -1,0 +1,160 @@
+@use 'variables' as v;
+@use 'sass:color';
+@use 'mixins' as m;
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  margin: 0 auto;
+  width: 180px;
+  height: 195px;
+  gap: 11px;
+  backdrop-filter: blur(40px);
+  background-color: color.adjust(v.$color-white, $alpha: -0.9);
+  border-radius: 20px;
+
+  &__title {
+    font-weight: 500;
+    font-size: 18px;
+    color: v.$color-black;
+    padding: 0 0 4px 0;
+  }
+
+  &__description {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 112%;
+    text-align: center;
+    color: v.$color-black;
+    max-width: 155px;
+  }
+
+  &--analysis {
+    grid-area: analysis;
+  }
+
+  &--design {
+    grid-area: design;
+  }
+
+  &--development {
+    grid-area: development;
+  }
+
+  &--maintenance {
+    grid-area: maintenance;
+  }
+
+  &--testing {
+    grid-area: testing;
+  }
+
+  &--integration {
+    grid-area: integration;
+  }
+
+  &__icon {
+    padding: 15px 0 0 0;
+    fill: v.$color-black;
+
+    &--analysis {
+      width: 29px;
+      height: 41px;
+    }
+
+    &--design {
+      width: 47px;
+      height: 40px;
+    }
+
+    &--development {
+      width: 50px;
+      height: 43px;
+    }
+
+    &--maintenance {
+      width: 43px;
+      height: 41px;
+    }
+
+    &--testing {
+      width: 44px;
+      height: 42px;
+    }
+
+    &--integration {
+      width: 42px;
+      height: 36px;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    backdrop-filter: blur(40px);
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.25);
+    background-color: color.adjust(v.$color-black, $alpha: -0.91);
+
+    .card__title {
+      color: v.$color-white;
+    }
+
+    .card__description {
+      color: v.$color-white;
+    }
+
+    .card__icon {
+      fill: v.$color-white;
+    }
+  }
+
+  @media(max-width: v.$media_xsm) {
+    width: 141px;
+    height: 153px;
+
+    &__title {
+      font-size: 14px;
+    }
+
+    &__description {
+      font-size: 11px;
+      line-height: 1.45;
+      max-width: 120px;
+    }
+
+    &__icon {
+      padding: 20px 0 0 0;
+
+      &--analysis {
+        width: 21px;
+        height: 32px;
+      }
+
+      &--design {
+        width: 37px;
+        height: 32px;
+      }
+
+      &--development {
+        width: 39px;
+        height: 34px;
+      }
+
+      &--maintenance {
+        width: 34px;
+        height: 32px;
+      }
+
+      &--testing {
+        width: 44px;
+        height: 42px;
+      }
+
+      &--integration {
+        width: 35px;
+        height: 33px;
+      }
+    }
+  }
+}
