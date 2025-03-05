@@ -4,8 +4,12 @@
 
 .work {
   margin: 0 auto;
-  max-width: 930px;
-  height: 580px;
+  border-bottom: 1px solid v.$color-white;
+  padding: 0 0 185px 0;
+
+  @media (max-width: v.$media_md) {
+    padding: 0 0 88px 0;
+  }
 
   &__content {
     display: flex;
