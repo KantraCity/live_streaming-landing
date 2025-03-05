@@ -11,5 +11,6 @@
   &:hover {
     cursor: pointer;
     fill: v.$color-black;
+    filter: drop-shadow(0 4px 5px v.$color-white);
   }
 }
