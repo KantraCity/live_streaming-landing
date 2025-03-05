@@ -14,6 +14,11 @@
     background: none;
   }
 
+  @media(max-width: v.$media_sm) {
+    background: none;
+    height: 730px;
+  }
+
   .hero__content {
     position: relative;
     max-width: 930px;
@@ -196,9 +201,9 @@
       &-btn {
         width: 100%;
         font-size: 30px;
-        padding: 15px 0;
-        border-radius: 15px;
+        padding: 10px 0;
         text-align: center;
+        border-radius: 0 0 20px 20px;
       }
     }
   }
@@ -209,7 +214,7 @@
       height: 140px;
 
       &-btn {
-        padding: 10px 0;
+        padding: 4px 0;
       }
     }
   }
