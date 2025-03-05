@@ -14,6 +14,7 @@
   backdrop-filter: blur(40px);
   background-color: color.adjust(v.$color-white, $alpha: -0.9);
   border-radius: 20px;
+  transition: 0.2s;
 
   &__title {
     font-weight: 500;
